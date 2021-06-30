@@ -227,10 +227,12 @@ export default {
     text-align: center;
   }
 
-  .girls {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 2em;
+  @include on-tablet {
+    .girls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-gap: 1.5em;
+    }
   }
 }
 
