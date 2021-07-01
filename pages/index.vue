@@ -15,6 +15,7 @@
             link="/secret-offer/"
             text="Secret Offer"
             setclass="btn-secondary-white db"
+            target="_blank"
           />
         </div>
       </div>
@@ -92,6 +93,7 @@
           link="/secret-offer/"
           text="Secret Offer"
           setclass="btn-secondary-black db"
+          target="_blank"
         />
       </div>
     </section>
@@ -116,6 +118,7 @@
             link="/secret-offer/"
             text="Secret Offer"
             setclass="btn-secondary-white db"
+            target="_blank"
           />
         </div>
       </div>
@@ -153,6 +156,7 @@
           link="/secret-offer/"
           text="Secret Offer"
           setclass="btn-secondary-black db"
+          target="_blank"
         />
       </div>
     </section>
