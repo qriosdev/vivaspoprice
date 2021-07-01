@@ -6,7 +6,7 @@
         type="image/webp"
       />
       <source :srcSet="require(`~/assets/img/${image}`)" type="image/jpeg" />
-      <img :src="require(`~/assets/img/${image}`)" :alt="alt" />
+      <img ref="img" :src="require(`~/assets/img/${image}`)" :alt="alt" />
     </picture>
 
     <div
@@ -43,6 +43,12 @@ export default {
       type: String,
       default: '',
     },
+  },
+
+  mounted() {
+    const img = this.$refs.img
+    img.width = img.clientWidth
+    img.height = img.clientHeight
   },
 }
 </script>

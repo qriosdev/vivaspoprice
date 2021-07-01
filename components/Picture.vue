@@ -2,7 +2,12 @@
   <picture v-if="image">
     <source :srcSet="require(`~/assets/img/${image}?webp`)" type="image/webp" />
     <source :srcSet="require(`~/assets/img/${image}`)" type="image/jpeg" />
-    <img :src="require(`~/assets/img/${image}`)" :class="setclass" :alt="alt" />
+    <img
+      ref="img"
+      :src="require(`~/assets/img/${image}`)"
+      :class="setclass"
+      :alt="alt"
+    />
   </picture>
 </template>
 
@@ -21,6 +26,12 @@ export default {
       type: String,
       default: '',
     },
+  },
+
+  mounted() {
+    const img = this.$refs.img
+    img.width = img.clientWidth
+    img.height = img.clientHeight
   },
 }
 </script>
