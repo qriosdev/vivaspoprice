@@ -34,7 +34,7 @@ export default {
 }
 
 a {
-  margin: 0.6em;
+  margin: 1em;
   display: inline-block;
 }
 

@@ -7,6 +7,7 @@
       :src="require(`~/assets/img/${image}`)"
       :class="setclass"
       :alt="alt"
+      @load="setImgSize()"
     />
   </picture>
 </template>
@@ -28,16 +29,50 @@ export default {
     },
   },
 
-  mounted() {
-    const img = this.$refs.img
-    img.width = img.clientWidth
-    img.height = img.clientHeight
+  // computed: {
+  //   getImgWidth() {
+  //     const img = this.$refs.img
+  //     return img.clientWidth
+  //   },
+
+  //   getImgHeight() {
+  //     const img = this.$refs.img
+  //     return img.clientHeight
+  //   },
+  // },
+
+  methods: {
+    setImgSize() {
+      const img = this.$refs.img
+      img.width = img.clientWidth
+      img.height = img.clientHeight
+    },
   },
+
+  // mounted() {
+  //   const img = this.$refs.img
+  //   img.onload = () => {
+  //     img.width = this.getImgWidth
+  //     img.height = this.getImgHeight
+  //   }
+  // },
+
+  // updated() {
+  //   const img = this.$refs.img
+  //   img.width = img.clientWidth
+  //   img.height = img.clientHeight
+  // },
 }
 </script>
 
 <style lang="scss" scoped>
 .full-width {
   width: 100%;
+}
+
+.round {
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
 }
 </style>

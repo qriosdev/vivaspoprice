@@ -50,36 +50,42 @@
           title="Brianna"
           text="“So much more fun than online dating. Wasted no time here.”"
           alt="brianna"
+          set-img-class="round"
         />
         <Blurb
           image="lindsey.jpg"
           title="Lindsey"
           text="“Never thought I'd like phone sex but guys here are something else.”"
           alt="lindsey"
+          set-img-class="round"
         />
         <Blurb
           image="vanessa.jpg"
           title="Vanessa"
           text="“Always thought of trying phone sex and now I'm addicted.”"
           alt="vanessa"
+          set-img-class="round"
         />
         <Blurb
           image="erika.jpg"
           title="Erika"
           text="“I'm a challenge. Good that a lot of guys here love challenges :)”"
           alt="erika"
+          set-img-class="round"
         />
         <Blurb
           image="lexi.jpg"
           title="Lexi"
           text="“I was so shy at first but met some really nice and gentle guys.”"
           alt="lexi"
+          set-img-class="round"
         />
         <Blurb
           image="brooke.jpg"
           title="Brooke"
           text="“The best experience in my life ever. Rough, dirty and vulgarrrr.”"
           alt="brooke"
+          set-img-class="round"
         />
       </div>
       <div class="row cta-btns">
@@ -229,6 +235,10 @@ export default {
 #local {
   .row {
     text-align: center;
+  }
+
+  .sub-title {
+    margin-bottom: 2em;
   }
 
   @include on-tablet {

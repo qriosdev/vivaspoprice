@@ -1,13 +1,6 @@
 <template>
   <div class="blurb">
-    <picture v-if="image" class="blurb-image">
-      <source
-        :srcSet="require(`~/assets/img/${image}?webp`)"
-        type="image/webp"
-      />
-      <source :srcSet="require(`~/assets/img/${image}`)" type="image/jpeg" />
-      <img ref="img" :src="require(`~/assets/img/${image}`)" :alt="alt" />
-    </picture>
+    <Picture :image="image" :setclass="setImgClass" :alt="alt" />
 
     <div
       v-if="icon"
@@ -43,12 +36,10 @@ export default {
       type: String,
       default: '',
     },
-  },
-
-  mounted() {
-    const img = this.$refs.img
-    img.width = img.clientWidth
-    img.height = img.clientHeight
+    setImgClass: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>
@@ -57,11 +48,6 @@ export default {
 .blurb {
   text-align: center;
   margin: 1rem 0 2rem;
-
-  img {
-    max-width: 175px;
-    border-radius: 50%;
-  }
 
   .blurb-icon {
     background-color: $white;
