@@ -1,5 +1,5 @@
 ---
-question: 'Is this private and confidential?'
+question: 'IS DAILTCHATLINE PRIVATE AND CONFIDENTIAL?'
 ---
 
-Guaranteed! Other callers on the line have no way of getting any of your personal information unless you give it to them. They won’t know your real nam, phone number, or address.
+Absolutely! Other callers have no way of getting any information about you unless you give it to them. They won’t know your phone number, address or real name.

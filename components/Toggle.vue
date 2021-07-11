@@ -40,21 +40,21 @@ export default {
   text-align: left;
 
   &-title {
-    @include fluid-typography(18, 22);
-    color: $black;
-    background-color: $white;
+    @include fluid-typography(17, 22);
+    color: $white;
+    background-color: $black;
     text-align: left;
+    font-weight: 700;
     display: block;
     width: 100%;
     padding: 1rem 2.5rem;
     position: relative;
     cursor: pointer;
     border: none;
-    outline: rgba($grey, 0.3) solid 1px;
 
     &::before {
       content: '+';
-      color: $red;
+      color: $white;
       position: absolute;
       top: 50;
       left: 0.8em;

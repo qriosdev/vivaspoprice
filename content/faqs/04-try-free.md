@@ -1,5 +1,5 @@
 ---
-question: 'Can I try for free?'
+question: 'CAN I TRY FOR FREE BEFORE PAYING?'
 ---
 
-In short, YES! As any transparent and honest business we offer free trial for our new callers. If you would like to give phone sex chat a try, simply dial our chat line with a free trial so you can test the features of our service and make sure that it fits your needs and budget.
+Of course. All legit services offer free trial. If you would like to give phone chat dating a try, then dial our free chat line with a free trial so you can test the features of the service and make sure that it is perfect for you.

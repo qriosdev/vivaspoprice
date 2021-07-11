@@ -1,12 +1,8 @@
 <template>
   <main>
-    <section id="hero">
-      <div class="row">
-        <h1>Blog</h1>
-      </div>
-    </section>
     <section id="articles">
       <div class="row">
+        <h1>BLOG</h1>
         <div class="blogs">
           <BlogCard
             v-for="article in articles"
@@ -30,35 +26,23 @@ export default {
 
   data() {
     return {
-      metaTitle: 'Blog | ChatLineMate',
+      metaTitle: 'Blog | DailyChatLine',
       metaDescription:
-        "Read ChatLineMate's blog to get useful tips and info about phone chat, phone hookup, and much more.",
-      metaImage: process.env.baseUrl + require('~/assets/img/bg-hero.jpg'),
+        "Check out DailyChatLine's blog to find cool tips and info about phone chat, phone hookup, and much more.",
+      metaImage:
+        process.env.baseUrl + require('~/assets/img/phonegirl-in-red.jpg'),
     }
   },
 }
 </script>
 
 <style lang="scss" scoped>
-#hero {
-  background-image: url('~assets/img/bg-hero.jpg');
-  background-size: cover;
-  background-color: rgba(9, 10, 10, 0.8);
-  background-blend-mode: overlay;
-  background-position: 50%;
-  padding: calc(30px + 10vw) 0;
-
-  h1 {
-    text-align: center;
-    color: $white;
-  }
-}
-
 #articles {
-  background-color: #f5f5f5;
+  background-color: $light;
 
   h1 {
     text-align: center;
+    margin-bottom: 2em;
   }
 
   .blogs {

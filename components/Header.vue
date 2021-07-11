@@ -1,11 +1,7 @@
 <template>
   <header>
     <div class="row">
-      <nuxt-link
-        to="/"
-        class="logo"
-        v-html="require('~/assets/img/clm-logo.svg?include')"
-      ></nuxt-link>
+      <nuxt-link to="/" class="logo">DAILYCHATLINE</nuxt-link>
     </div>
   </header>
 </template>
@@ -16,21 +12,17 @@ export default {}
 
 <style lang="scss" scoped>
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99999;
+  background-color: $black;
+  padding: 0.4rem;
 
   .row {
     text-align: center;
-    padding: 1rem 0;
   }
 
   .logo {
-    ::v-deep svg {
-      height: calc(1rem + 2vw);
-    }
+    font-family: 'Oswald', sans-serif;
+    color: $white;
+    font-size: 2.1rem;
   }
 }
 </style>

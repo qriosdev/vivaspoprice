@@ -28,10 +28,10 @@ export default {
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0.5em 1.4em;
-    font-weight: 700;
     letter-spacing: 0.4px;
+    text-transform: uppercase;
   }
 }
 </style>

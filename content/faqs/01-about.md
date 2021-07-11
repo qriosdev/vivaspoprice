@@ -1,9 +1,10 @@
 ---
-question: 'About ChatLineMate'
+question: 'ABOUT DAILYCHATLINE'
 ---
 
-At ChatLineMate, we like to treat our users which are new to our phone chat line. What exactly will you get? Everything! We would like our associates which are new to see full service, in order for your chat line numbers free trial allows you access to any or all kinds, along with the live chat. Send and receive messages the same as every other user on the system- just make sure you buy more minutes before they run out of minutes with the complimentary telephone chat line numbers. You wouldn't want to leave a hot caller hanging, and just when you are getting to the good stuff!
+At DailyChatLine, we like to treat our callers that are new. That is why all first time callers, who wish to try our local trial offer phone chat line numbers, get a totally free 60 or 30 minute free chat line, in order to analyze it out before you choose to jump in – and we're 100$ sure it will be loved by you.
+So what do you get? Everything! We want our associates that are new to see full service, so that your chat line numbers free trial allows you access to any or all kinds, together with the live chat. Send and receive messages just like every other user on the system- simply make sure you purchase more minutes before they run out of minutes with the complimentary telephone chat line numbers. You wouldn't want to leave a hot caller hanging, and only when you are getting to the good stuff!
 
-All you have to do is CALL, to assert your trial offer chat line numbers. We are going to automatically add 30 free chat minutes and the telephone number you are calling from, so ensure you are on the phone you wish to work with. After the minutes are added you're immediately ready to jump in and try over 100 free chat line numbers.
+To claim your trial offer chat line numbers, all you need to do is CALL. We are going to automatically add the phone number and 30 free chat minutes you're calling from, so ensure you are on the phone you wish to work with. You're immediately ready to jump in and attempt over 100 free chat line numbers after the minutes are added.
 
-So what exactly are you really waiting for? Phone now and revel in also the top relationship meeting in 2016 and the most actual!
+So what are you really waiting for? Call today and enjoy the most real and also the very best dating encounters in your area!

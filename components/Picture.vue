@@ -29,18 +29,6 @@ export default {
     },
   },
 
-  // computed: {
-  //   getImgWidth() {
-  //     const img = this.$refs.img
-  //     return img.clientWidth
-  //   },
-
-  //   getImgHeight() {
-  //     const img = this.$refs.img
-  //     return img.clientHeight
-  //   },
-  // },
-
   methods: {
     setImgSize() {
       const img = this.$refs.img
@@ -48,20 +36,6 @@ export default {
       img.height = img.clientHeight
     },
   },
-
-  // mounted() {
-  //   const img = this.$refs.img
-  //   img.onload = () => {
-  //     img.width = this.getImgWidth
-  //     img.height = this.getImgHeight
-  //   }
-  // },
-
-  // updated() {
-  //   const img = this.$refs.img
-  //   img.width = img.clientWidth
-  //   img.height = img.clientHeight
-  // },
 }
 </script>
 
@@ -74,5 +48,17 @@ export default {
   border-radius: 50%;
   max-width: 200px;
   height: auto;
+}
+
+.br5 {
+  border-radius: 5px;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.center {
+  margin: auto;
 }
 </style>

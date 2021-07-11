@@ -58,7 +58,7 @@ export default {
   text-align: center;
   text-decoration: none;
   padding: 1em 2em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   border-radius: 100px;
   font-size: 1rem;
   font-weight: 700;

@@ -1,5 +1,5 @@
 ---
-question: 'What are ice-breakers?'
+question: 'WHAT ARE ICE-BREAKERS?'
 ---
 
-Ice breakers are pre-recorded voicemail messages you can use to start conversations with other people if you are too shy to send a greeting of your own.
+Ice breakers are pre-recorded messages you can use to initiate conversations if you are too shy to send a greeting of your own.

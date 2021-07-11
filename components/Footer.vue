@@ -7,7 +7,7 @@
         <nuxt-link to="/terms-conditions/">TERMS AND CONDITIONS</nuxt-link>
       </div>
       <div class="copyright">
-        ALL RIGHTS RESERVED @ CHATLINEMATE {{ getCurrentYear() }}
+        ALL RIGHTS RESERVED @ DAILYCHATLINE {{ getCurrentYear() }}
       </div>
     </div>
   </footer>
@@ -26,19 +26,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.row {
-  text-align: center;
-  font-size: 0.8rem;
-  padding: 2em 0;
-  line-height: 1;
-}
+footer {
+  background-color: $black;
 
-a {
-  margin: 1em;
-  display: inline-block;
-}
+  .row {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 2em 0;
+    line-height: 1;
+    color: $white;
+  }
 
-.copyright {
-  padding: 1em 0;
+  a {
+    margin: 1em;
+    display: inline-block;
+    color: $white;
+  }
+
+  .copyright {
+    padding: 1em 0;
+  }
 }
 </style>

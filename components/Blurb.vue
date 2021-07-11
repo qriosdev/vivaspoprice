@@ -1,6 +1,6 @@
 <template>
   <div class="blurb">
-    <Picture :image="image" :setclass="setImgClass" :alt="alt" />
+    <Picture :image="image" :setclass="setimgclass" :alt="alt" />
 
     <div
       v-if="icon"
@@ -36,7 +36,7 @@ export default {
       type: String,
       default: '',
     },
-    setImgClass: {
+    setimgclass: {
       type: String,
       default: '',
     },

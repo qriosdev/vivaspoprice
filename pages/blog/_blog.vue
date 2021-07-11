@@ -60,7 +60,7 @@ export default {
   h1 {
     color: $white;
     text-align: center;
-    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 }
 

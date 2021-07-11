@@ -10,13 +10,7 @@
 
 <style lang="scss" scoped>
 #not-found {
-  background-image: url('~assets/img/bg-hero.jpg');
-  background-size: cover;
-  background-color: rgba($black, 0.8);
-  background-blend-mode: overlay;
-  background-position: top center;
-  color: $white;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;

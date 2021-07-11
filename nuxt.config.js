@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Chat Line Mate',
+    title: 'DailyChatLine',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -13,26 +13,25 @@ export default {
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
 
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com/',
-        crossorigin: 'anonymous',
-      },
+      // {
+      //   rel: 'preconnect',
+      //   href: 'https://fonts.gstatic.com/',
+      //   crossorigin: 'anonymous',
+      // },
 
-      {
-        rel: 'stylesheet preload prefetch',
-        as: 'style',
-        type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap',
-        crossorigin: 'anonymous',
-      },
+      // {
+      //   rel: 'stylesheet preload prefetch',
+      //   as: 'style',
+      //   type: 'text/css',
+      //   href: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Oswald:wght@300&display=swap',
+      //   crossorigin: 'anonymous',
+      // },
     ],
   },
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    phone: process.env.PHONE || 'tel:5098765790',
+    phone: process.env.PHONE || 'tel:5098765792',
   },
 
   globals: {
@@ -44,6 +43,7 @@ export default {
 
   styleResources: {
     scss: ['./assets/scss/*.scss'],
+    hoistUseStatements: true,
   },
 
   router: {
@@ -63,6 +63,23 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
     '@modules/generator',
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Oswald: [300],
+          'Open+Sans': [300, 700],
+        },
+        display: 'swap',
+        prefetch: false,
+        preconnect: false,
+        preload: true,
+        download: true,
+        base64: false,
+        stylePath: 'scss/_fonts.scss',
+        inject: false,
+      },
+    ],
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

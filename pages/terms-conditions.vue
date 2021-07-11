@@ -25,10 +25,11 @@ export default {
 
   data() {
     return {
-      metaTitle: 'Terms & Conditions | ChatLineMate',
+      metaTitle: 'Terms & Conditions | DailyChatLine',
       metaDescription:
-        'Welcome to CHATLINEMATE, the best website to meet hots singles for phone chat, hookup, or more. See our terms.',
-      metaImage: process.env.baseUrl + require('~/assets/img/bg-hero.jpg'),
+        'This Agreement sets out your agreement with us with respect to your use of the Services as well as our ability to communicate with you.',
+      metaImage:
+        process.env.baseUrl + require('~/assets/img/phonegirl-in-red.jpg'),
     }
   },
 }
@@ -36,15 +37,11 @@ export default {
 
 <style lang="scss" scoped>
 #hero {
-  background-image: url('~assets/img/bg-hero.jpg');
-  background-size: cover;
-  background-color: rgba(9, 10, 10, 0.8);
-  background-blend-mode: overlay;
-  background-position: 50%;
-  padding: calc(50px + 5vw) 0;
+  padding: 2vw 0;
+  background-color: $light;
 
-  .row {
-    color: $white;
+  h1 {
+    margin-bottom: 0;
     text-align: center;
   }
 }
