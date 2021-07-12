@@ -137,6 +137,6 @@ export default {
       priority: 1,
       lastmod: new Date(),
     },
-    exclude: [],
+    exclude: ['/secret-offer/'],
   },
 }
