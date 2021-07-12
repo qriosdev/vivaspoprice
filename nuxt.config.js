@@ -71,13 +71,10 @@ export default {
           'Open+Sans': [300, 700],
         },
         display: 'swap',
-        prefetch: false,
-        preconnect: false,
-        preload: true,
         download: true,
-        base64: false,
         stylePath: 'scss/_fonts.scss',
         inject: false,
+        overwriting: true,
       },
     ],
   ],
@@ -138,5 +135,17 @@ export default {
       lastmod: new Date(),
     },
     exclude: ['/secret-offer/'],
+  },
+
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        if (type === 'font') {
+          const latin = new RegExp('-latin\\d{1,}.+woff2$')
+          return latin.test(file)
+        }
+        return ['script', 'style'].includes(type)
+      },
+    },
   },
 }
