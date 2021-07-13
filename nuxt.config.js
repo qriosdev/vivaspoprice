@@ -124,6 +124,9 @@ export default {
     icon: {
       fileName: 'favicon.png',
     },
+    manifest: {
+      theme_color: '#d33',
+    },
   },
 
   sitemap: {
