@@ -16,6 +16,7 @@
     );
   }
 
+  // SCREEN SIZES
   @media (min-width: #{$desktop}px) {
     font-size: #{$maxFont}px;
   }
@@ -30,5 +31,28 @@
 @mixin on-desktop {
   @media (min-width: #{$desktop}px) {
     @content;
+  }
+}
+
+// BUTTON
+@mixin btn($background, $color, $border, $shadow) {
+  @include fluid-typography(14, 15);
+
+  background-color: $background;
+  color: $color;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5em 3em;
+  margin-bottom: 1.2rem;
+  border-radius: 3px;
+  font-family: $font-rw;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 2px solid $border;
+  transition: all 0.3s ease-in-out;
+
+  @if $shadow {
+    box-shadow: 0px 2px 30px 0px rgba($red, 50%);
   }
 }

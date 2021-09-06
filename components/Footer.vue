@@ -2,45 +2,49 @@
   <footer>
     <div class="row">
       <div class="footer-menu">
-        <nuxt-link to="/blog/">BLOG</nuxt-link>
-        <nuxt-link to="/privacy-policy/">PRIVACY POLICY</nuxt-link>
-        <nuxt-link to="/terms-conditions/">TERMS AND CONDITIONS</nuxt-link>
+        <nuxt-link to="/about/">About</nuxt-link>
+        <nuxt-link to="/questions-answered/">Questions Answered</nuxt-link>
+        <nuxt-link to="/privacy-policy/">Privacy Policy</nuxt-link>
+        <nuxt-link to="/terms-of-service/">Terms of Service</nuxt-link>
+        <nuxt-link to="/contact/">Contact</nuxt-link>
       </div>
-      <div class="copyright">
-        ALL RIGHTS RESERVED @ DAILYCHATLINE {{ getCurrentYear() }}
-      </div>
+      <div class="copyright">Copyright @ Upforfling.com</div>
     </div>
   </footer>
 </template>
 
 <script>
-export default {
-  methods: {
-    getCurrentYear() {
-      const currentYear = new Date()
-      const fullYear = currentYear.getFullYear()
-      return fullYear
-    },
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
 footer {
-  background-color: $black;
+  background-color: #111144;
 
   .row {
     text-align: center;
-    font-size: 0.8rem;
     padding: 2em 0;
     line-height: 1;
     color: $white;
+
+    @include on-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   a {
-    margin: 1em;
+    margin: 0.5em;
     display: inline-block;
     color: $white;
+  }
+
+  .footer-menu {
+    margin-bottom: 2rem;
+
+    @include on-tablet {
+      margin-bottom: 0;
+    }
   }
 
   .copyright {

@@ -1,15 +1,9 @@
 <template>
   <main>
-    <section id="hero">
-      <div class="row">
-        <h1>
-          {{ privacy.title }}
-        </h1>
-      </div>
-    </section>
-
     <section id="content">
       <div class="row">
+        <h1>{{ privacy.title }}</h1>
+        <Divider setclass="center" />
         <NuxtContent :document="privacy" />
       </div>
     </section>
@@ -23,25 +17,22 @@ export default {
     return { privacy }
   },
 
-  data() {
-    return {
-      metaTitle: 'Privacy Policy | Dailychat',
-      metaDescription:
-        'This Privacy Policy (“Policy”) explains how information about you or associated with you (“personal information”) is collected, used and disclosed by DailyChatLine.',
-      metaImage:
-        process.env.baseUrl + require('~/assets/img/phonegirl-in-red.jpg'),
-    }
+  computed: {
+    metaTitle() {
+      return this.privacy.title
+    },
+    metaDescription() {
+      return this.privacy.description
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-#hero {
-  padding: 2vw 0;
-  background-color: $light;
+#content {
+  padding: calc(4rem + 8vw) 0;
 
   h1 {
-    margin-bottom: 0;
     text-align: center;
   }
 }

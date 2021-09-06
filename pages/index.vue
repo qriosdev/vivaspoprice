@@ -2,278 +2,212 @@
   <main>
     <section id="hero">
       <div class="row">
-        <div class="left">
-          <div class="title">
-            <h1>THE HOTTEST CHAT LINE</h1>
-            <p>
-              Aren't you tired of faked online profiles and wasted time? Let's
-              experience something REAL.
-            </p>
-          </div>
-          <div class="steps">
-            <BlurbLeft
-              icon="keypad.svg"
-              title="DIAL OUR NUMBER"
-              text="Call our phone chat line to start your trial and connect to local singles."
-            />
-            <BlurbLeft
-              icon="microphone.svg"
-              title="RECORD AND LISTEN"
-              text="Record your personal greeting and listen to others' greetings to find your match."
-            />
-            <BlurbLeft
-              icon="chatting.svg"
-              title="START CHATTING"
-              text="When you find someone interesting, connect privately and start chatting."
-            />
-          </div>
-          <div class="btns">
-            <Button
-              :link="phone"
-              icon="phone-call-web.svg"
-              setclass="btn-primary db"
-              :internal="false"
-            />
-            <Button
-              link="/secret-offer/"
-              text="Secret Offer"
-              setclass="btn-secondary-black db"
-              target="_blank"
-            />
-          </div>
-        </div>
-        <div class="right girl-red">
-          <Picture image="chatline-girl.png" setclass="db center" />
-        </div>
+        <p class="pre-title">Are You</p>
+        <h1>Up For Fling?</h1>
+        <p class="sub-title">
+          Whether you’re looking for women who want to hook up, free trial local
+          chat line numbers, cam girls, or adult dating sites that actually
+          work, we handpicked all the best sites right here on Up For Fling.
+        </p>
+        <Button hash="#fun" text="Let's Have Fun" />
       </div>
     </section>
 
-    <section id="nostrings">
+    <section id="fun">
       <div class="row">
-        <div class="title">
-          <h2>NO STRINGS ATTACHED</h2>
+        <h2>I'm Up For...</h2>
+        <Divider />
+      </div>
+      <div class="row cards">
+        <Card url="/hookup/" background="upfor-hookup1.jpg" title="Hookup" />
+        <Card
+          url="/phone-sex/"
+          background="phone-sex-350.jpg"
+          title="Phone Sex"
+        />
+        <Card
+          url="/cam-girls/"
+          background="cam-girls-340.jpg"
+          title="Cam Girls"
+        />
+      </div>
+    </section>
+
+    <Optin />
+
+    <section id="easier">
+      <div class="row easier-txt">
+        <div>
+          <h2>It's Never Been Easier</h2>
+          <Divider />
           <p>
-            Chat with the hottest singles in your city. Let your voice show off
-            your real self with instant phone chat with other flirty local
-            singles. Experience new exciting connections in the comfort of your
-            home.
+            <b
+              >Up For Fling cuts out the nonsense to help you to find local
+              women that want to have sex in just minutes.</b
+            >
+          </p>
+          <p>
+            Our site offers an
+            <nuxt-link to="/hookup/"
+              >easy and quick way to find and fuck local women</nuxt-link
+            >
+            regardless of their age, look, or status. Instead of spending hours
+            searching and swiping through hundreds of profiles to find a booty
+            call, our site can find you a girl within 4 miles of your location
+            who wants to fuck tonight with no strings attached.
+          </p>
+          <p>
+            We all how hard it is for men to get laid, so we work hard to create
+            this site to take out all the hustles and make it super simple. Just
+            imagine having a regular fuck buddy or multiple fuck buddies for sex
+            anytime you want it. Instead of spending time checking your
+            Facebook, Instagram, Snapchat, etc. you could be meeting up with
+            someone hot right now for a quickie.
+          </p>
+          <p>
+            You can stop looking up profiles on random sites and enjoy the
+            largest selection of hot girls around your area craving for a hookup
+            tonight with guys just like you. Our website partners with a network
+            of services that has over 5 million profiles around the country to
+            find exactly what you’re looking for in just minutes.
           </p>
         </div>
-        <div class="facts">
-          <Blurb
-            image="real-connections.jpg"
-            title="REAL CONNECTIONS"
-            text="You only talk to other hot local singles who sound interesting to you – no paid operators – 100% real."
-            setimgclass="br5 mb1"
-          />
-          <Blurb
-            image="private-chat.jpg"
-            title="PRIVATE CHAT"
-            text="Every call is private and confidential. Your information is always secure. We know privacy."
-            setimgclass="br5 mb1"
-          />
-          <Blurb
-            image="local-fun.jpg"
-            title="LOCAL FUN"
-            text="It's all up to you. Create your own experience with other like-minded in your area within minutes."
-            setimgclass="br5 mb1"
-          />
-        </div>
+      </div>
+      <div class="row stats">
+        <Counter :number="8400" suffix="+" title="HOOKUPS DAILY" />
+        <Counter :number="600" suffix="K+" title="ACTIVE USERS" />
+        <Counter :number="28" suffix="M+" title="MESSAGES EXCHANGED" />
       </div>
     </section>
 
-    <section id="try">
+    <section id="using">
       <div class="row">
-        <div class="container">
-          <div class="callout">
-            <h2>TRY FOR FREE</h2>
-            <p>Talk to <b>local singles</b> now</p>
-          </div>
-          <div class="btns">
-            <Button
-              :link="phone"
-              icon="phone-call-web.svg"
-              setclass="btn-primary db"
-              :internal="false"
-            />
-            <Button
-              link="/secret-offer/"
-              text="Secret Offer"
-              setclass="btn-secondary-white db"
-              target="_blank"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="benefits">
-      <div class="row">
-        <div class="title">
-          <h2>PAID MEMEBER BENEFITS</h2>
+        <div class="column-left">
+          <h2>Using Our Website</h2>
+          <Divider />
           <p>
-            DailyChatLine offers first-time male callers a free trial which
-            gives access to amazing ladies and exciting phone chat features to
-            connect with local singles for dating and fun.
+            Using our website, you no longer have to doubt or constantly ask
+            yourself what you have to do to get laid. Everything is
+            straightforward. People who use our website are straight shooters
+            and don’t need anything before meeting up for sex. If you want to
+            make it more romantic it’s totally up to you but it’s not required.
           </p>
-        </div>
-        <div class="features">
-          <div class="one">
-            <BlurbLeft
-              icon="mobile-phone.svg"
-              title="USE ANY PHONE"
-              text="Your Paid Membership may be utilized from any phone number, so you could join from everywhere."
-            />
-            <BlurbLeft
-              icon="priority.svg"
-              title="PRIORITY CUSTOMER SERVICE"
-              text="Paid membership with affordable packages gives you the most talk time with great local women."
-            />
-            <BlurbLeft
-              icon="send.svg"
-              title="PRIORITY MESSAGES"
-              text="Paid member have choice to place their message ahead of trial users that are complimentary."
-            />
-            <BlurbLeft
-              icon="microphone.svg"
-              title="SAVED GREETING"
-              text="Connect faster by using your previously recorded greeting so you can start chatting immediately."
-            />
-          </div>
-          <div class="two">
-            <BlurbLeft
-              icon="loyalty.svg"
-              title="LOYALTY PROGRAM"
-              text="Enjoy rewards and earn bonus chat time for being a loyal Paid Member of DailyChatLine."
-            />
-            <BlurbLeft
-              icon="renewal.svg"
-              title="FAST RENEWAL"
-              text="As a Paid Member, you are all set to rapidly and simply add minutes to prevent disconnects during a chat."
-            />
-            <BlurbLeft
-              icon="access.svg"
-              title="PRIORITY ACCESS"
-              text="Enjoy priority access to our system no matter how busy it gets. No waiting!"
-            />
-            <BlurbLeft
-              icon="ad-free.svg"
-              title="AD-FREE"
-              text="Paid membership removes sponsor ads as you browse through other members' greetings."
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="why">
-      <div class="row">
-        <div class="container">
-          <div class="callout">
-            <h2>WHY US</h2>
-            <p>
-              DailyChatLine is the best free trial chatline with to meet local
-              singles. Connect live with real, sexy wowmen for fun, friendship,
-              or relationship. Yes, you’re talking to real local women. We have
-              NO paid operators. Plus, you’re in control of who you want to talk
-              to. Every call is private and anonymous.
-            </p>
-          </div>
-          <div class="btns">
-            <Button
-              :link="phone"
-              icon="phone-call-web.svg"
-              setclass="btn-primary db"
-              :internal="false"
-            />
-            <Button
-              link="/secret-offer/"
-              text="Secret Offer"
-              setclass="btn-secondary-white db"
-              target="_blank"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="advice">
-      <div class="row">
-        <div class="title">
-          <h2>GREETINGS ADVICE</h2>
           <p>
-            DailyChatLine offers first-time male callers a free trial which
-            gives access to hottest ladies and exciting phone chat features to
-            connect with local singles for dating and fun.
+            You could simply meet at your place or wherever you agreed upon to
+            fuck. Hassle-free. You could even do it outdoors, in a car, park,
+            beach, etc. People using our website are super chill and know
+            exactly what they want with nothing extra.
           </p>
+          <p>
+            Now, the only question is, who will you choose to be your next fuck
+            buddy?
+          </p>
+
+          <div class="toggles">
+            <Toggle
+              v-for="toggle in togglesUsing"
+              :key="toggle.title"
+              :title="toggle.title"
+            >
+              <nuxt-content :document="toggle" />
+            </Toggle>
+          </div>
         </div>
-        <div class="cards">
-          <FlipCard
-            ftitle="LISTEN"
-            ftext="Mumbling or hearing background noise can be a turn-off. Develop an excellent impression by listening to it to make sure it's clear and perceptible and taking the time to record your greeting in a quiet place."
-            btitle="PAY ATTENTION"
-            btext="Do not simply attempt to impress her by droning on about yourself. Reveal interest by asking questions and listening (without interruption) to her answer."
-            :button="{ url: phone, text: 'CALL NOW', external: true }"
-          />
-          <FlipCard
-            ftitle="SHARE"
-            ftext="Give your age, name and crucial things that make you special. Share your character instead of personal details like e-mail or workplace (preserve this for private chats in case you need)."
-            btitle="EXPRESS"
-            btext="Be free to express that you're enthusiastic and want excitement! Women want to be wanted, but natural and mutual is key."
-            :button="{ url: phone, text: 'CALL NOW', external: true }"
-          />
-          <FlipCard
-            ftitle="BE SPECIFIC"
-            ftext="Do you need a sexual escape, an entertaining chat or the partner you wish to spend the rest of your life with? Let her know so you will attract the right person for you."
-            btitle="CONNECT"
-            btext="Connecting on similarities builds attraction, and differences can fuel intrigue. Both areas are great ways to build a stronger interest and attraction."
-            :button="{ url: phone, text: 'CALL NOW', external: true }"
-          />
-          <FlipCard
-            ftitle="SMILE"
-            ftext="Most of women respond to charm, warmth and confidence. Smiles can be heard in our voices, so smile when you record your greeting to show your friendliness."
-            btitle="HAVE FUN"
-            btext="Once you get to know her a bit, find the things that make her laugh. Nothing connects two people in conversation like laughter."
-            :button="{ url: phone, text: 'CALL NOW', external: true }"
-          />
+
+        <div class="column-right">
+          <div class="cards">
+            <Card
+              url="/hookup/"
+              background="upfor-hookup1.jpg"
+              title="Hookup"
+            />
+            <Card
+              rurl="/phone-sex/"
+              background="phone-sex-350.jpg"
+              title="Phone Sex"
+            />
+            <Card
+              url="/cam-girls/"
+              background="cam-girls-340.jpg"
+              title="Cam Girls"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="faq">
-      <div class="row title">
-        <h2>FAQ</h2>
+    <section id="finding">
+      <div class="row">
+        <div>
+          <h2>Finding Your Perfect Fuck Buddy Tonight</h2>
+          <Divider />
+          <p>
+            Whatever you call it, a fuck buddy, one-night stand, no strings
+            attached relationship, or booty call, we all know that it simply
+            means one thing – we want to fuck, right now. For some people it
+            could be very casual sex, for others it’s a relationship with no
+            feelings. We understand and don’t sugarcoat it. That’s why our site
+            is considered one of the best adult sites of the year that focuses
+            on delivering results you’re looking for – get laid. No need to make
+            things complicated.
+          </p>
+
+          <div class="btn">
+            <Button link="/hookup/" text="Easy Hookup" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="new">
+      <div class="row">
+        <h2>New to This?</h2>
+        <Divider />
+      </div>
+      <div class="row two-columns">
         <p>
-          At DailyChatLine, we strive to give you a fun and pleasant way to
-          connect with other like-minded singles. You can get answers quickly in
-          our Frequently Asked Questions below, which cover everything you need
-          to know to start chatting with singles instantly.
+          For those who’re new to this and need clarification, a fuck buddy is
+          someone you are sleeping with/fucking where both of you understand
+          that each person is simply using the other for sex and pleasure with
+          no other extra commitment. This is not a relationship in its
+          traditional sense, so no, they’re not your girlfriend or boyfriend,
+          neither are they your side-chick or mistress. A fuck buddy is just for
+          pure pleasure. This is a transactional type of casual relationship
+          where all people involved simply want to have no strings attached
+          casual sex with no nothing extra. You meet, you fuck. It’s that
+          simple. Make sure you keep that mindset throughout the process to
+          manage your own and your potential flings’ expectations. Don’t get too
+          invested.
+        </p>
+        <p>
+          At the same time, fuck buddies are committed to one thing – sex. So
+          you can rely on them for that, assuming you both agree on your
+          specific arrangements. If you both want you can be friends but it’s
+          not very common because it’d involve more feelings and attachment.
+          Usually, the hottest sex happens when people don’t know each other at
+          all and keep it that way. It makes sense because you don’t really want
+          to know their issues, problems, etc., you just want to have great sex.
+          Most of fuck buddies are discrete and enjoy safe and private intimacy
+          with someone steady and reliable. Yes, people want to try new things
+          but at some point, we all find what we like the most and would want to
+          repeat that many times.
         </p>
       </div>
-      <div class="row toggles">
-        <Toggle v-for="faq in faqs" :key="faq.question" :title="faq.question">
-          <nuxt-content :document="faq" />
-        </Toggle>
-      </div>
     </section>
-    <section id="start">
+
+    <section id="more">
+      <div class="row title">
+        <h2>Want to Know More?</h2>
+        <Divider />
+      </div>
       <div class="row">
-        <h2>START CHATTING TODAY</h2>
-        <p>60 min FREE chat line</p>
-        <div class="btns">
-          <Button
-            :link="phone"
-            icon="phone-call-web.svg"
-            setclass="btn-primary db"
-            :internal="false"
-          />
-          <Button
-            link="/secret-offer/"
-            text="Secret Offer"
-            setclass="btn-secondary-black db"
-            target="_blank"
-          />
-        </div>
+        <Toggle
+          v-for="toggle in togglesMore"
+          :key="toggle.title"
+          :title="toggle.title"
+        >
+          <nuxt-content :document="toggle" />
+        </Toggle>
       </div>
     </section>
   </main>
@@ -282,196 +216,224 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const faqs = await $content('faqs').sortBy('createdAt').fetch()
-    return { faqs }
-  },
-
-  data() {
-    return {
-      metaTitle: '60 Minute Free Chat Line | DailyChatLine',
-      metaDescription:
-        "Aren't you tired of faked online profiles and wasted time? Let's experience something REAL. Try the hottest free trial chat line.",
-      metaImage:
-        process.env.baseUrl + require('~/assets/img/phonegirl-in-red.jpg'),
-      phone: process.env.phone,
-    }
+    const togglesUsing = await $content('/toggles/home/using')
+      .sortBy('createdAt')
+      .fetch()
+    const togglesMore = await $content('/toggles/home/more')
+      .sortBy('createdAt')
+      .fetch()
+    return { togglesUsing, togglesMore }
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.btns {
-  width: 80%;
-  margin: auto;
-
-  @include on-tablet {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
-    margin: auto;
-    width: 100%;
-  }
-}
-
-.title {
-  text-align: center;
-  margin: auto;
-  margin-bottom: 3rem;
-  max-width: 800px;
-}
-
-.callout {
-  text-align: center;
-  margin-bottom: 2rem;
-
-  & > * {
-    color: $white;
-  }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
 }
 
 #hero {
-  padding-bottom: 0;
-
-  .steps {
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      height: 70%;
-      top: 30px;
-      left: 30px;
-      border-left: 1px dashed $dark;
-      z-index: -99;
-    }
-  }
-
-  .row {
-    @include on-desktop {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-  }
-}
-
-#nostrings {
-  background-color: $light;
-
-  .facts {
-    @include on-desktop {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 2rem;
-    }
-  }
-}
-
-#try {
-  background-image: url('~assets/img/phonegirl-in-red.jpg');
-  background-size: cover;
-  background-position: center left;
-  background-color: rgba(9, 10, 10, 0.6);
-  background-blend-mode: overlay;
+  display: flex;
+  align-items: center;
   position: relative;
-  padding: calc(50px + 7vw) 0;
+  background-position: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 24, 68, 0) 0%,
+      #1a1844 100%
+    ),
+    url('/shape-square.png');
+  min-height: 100vh;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: soft-light;
+    background-image: url('/uff-hero.jpg'),
+      radial-gradient(circle at top right, #2b3ea0 0%, #1a1844 45%);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
 
   .row {
+    text-align: center;
+    max-width: 700px;
+  }
+
+  .pre-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .sub-title {
+    margin-bottom: 3rem;
+
+    @include fluid-typography(15, 18);
+  }
+}
+
+#fun {
+  background-blend-mode: screen;
+  background-image: url('/free-hookup-upforfling.jpg');
+  background-color: $blue;
+  background-size: cover;
+  background-position: center;
+  padding-top: calc(3rem + 8vw);
+  min-height: 100vh;
+
+  .row:first-child {
+    margin-bottom: 4rem;
+  }
+}
+
+#easier {
+  background-blend-mode: overlay;
+  background-image: url('/upforfling-hotgirl-2.jpg'),
+    linear-gradient(316deg, $blue 0%, #2b3ea0 75%);
+  background-size: cover;
+  background-position: 40% 50%;
+  position: relative;
+
+  .row {
+    position: relative;
+    z-index: 2;
+  }
+
+  .easier-txt {
     @include on-desktop {
       display: flex;
       justify-content: flex-end;
-    }
-  }
 
-  .container {
-    @include on-desktop {
-      width: 40%;
-    }
-  }
-
-  h2 {
-    @include fluid-typography(24, 40);
-  }
-}
-
-#benefits {
-  .features {
-    .one,
-    .two {
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        height: 100%;
-        top: 30px;
-        left: 30px;
-        border-left: 1px dashed $dark;
-        z-index: -99;
+      div {
+        max-width: 60%;
       }
     }
-
-    .one {
-      @include on-desktop {
-        height: 75%;
-      }
-    }
-
-    .two {
-      &::after {
-        height: 75%;
-      }
-    }
-
-    @include on-desktop {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 3rem;
-    }
-  }
-}
-
-#why {
-  background-image: url('~assets/img/tattoo-girl.jpg');
-  background-size: cover;
-  background-position: 85% 0;
-  background-color: rgba(9, 10, 10, 0.6);
-  background-blend-mode: overlay;
-  position: relative;
-  padding: calc(50px + 5vw) 0;
-
-  .container {
-    @include on-desktop {
-      width: 40%;
-    }
-  }
-}
-
-#advice {
-  .row {
-    max-width: 900px;
   }
 
-  .cards {
-    @include on-tablet {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-      grid-gap: 2rem;
-    }
-  }
-}
-
-#faq {
-  background-color: $light;
-}
-
-#start {
-  .row {
+  .stats {
+    background-color: rgba(60, 60, 200, 0.2);
+    border-radius: 5px;
+    border-color: #2b87da;
+    box-shadow: inset 0px 2px 50px 0px rgb(60 60 200 / 40%);
+    position: relative;
+    align-items: center;
     text-align: center;
-    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    grid-gap: 3rem;
+    padding: 3rem 0;
+    margin-top: 2rem;
   }
 
-  p {
-    margin-bottom: 5%;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100vw;
+    background-image: linear-gradient(180deg, rgba($black, 0) 0%, $blue 100%);
+    z-index: 1;
+  }
+}
+
+#using {
+  .toggles {
+    margin: 4rem 0;
+  }
+
+  .row {
+    @include on-desktop {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      grid-gap: 3.5rem;
+
+      .column-right {
+        transform: translateY(15%);
+      }
+    }
+  }
+}
+
+#finding {
+  background-blend-mode: screen;
+  background-image: url('/upforflingbdms-2.jpg');
+  background-color: $blue;
+  background-size: cover;
+  background-position: 20% 0%;
+  position: relative;
+
+  @include on-tablet {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .row {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+
+    & > div {
+      max-width: 460px;
+    }
+  }
+
+  .btn {
+    padding: 1rem 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background-image: linear-gradient(180deg, rgba($black, 0) 0%, $blue 100%);
+    z-index: 1;
+  }
+}
+
+#new {
+  background-image: url('/3circles-bg.png'),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(254, 73, 67, 0.2) 100%);
+  background-size: cover;
+  background-position: center;
+
+  .two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    @include on-desktop {
+      grid-gap: 4rem;
+    }
+  }
+}
+
+#more {
+  .title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .divider {
+    margin: 2rem auto;
+  }
+
+  .toggle {
+    p {
+      margin: 0;
+    }
   }
 }
 </style>

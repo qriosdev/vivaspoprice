@@ -36,33 +36,46 @@ export default {
 
 <style lang="scss" scoped>
 .toggle {
-  margin: 0.5em 0;
-  text-align: left;
+  margin: 1em 0;
+  color: $white;
+  background-image: linear-gradient(
+    90deg,
+    rgba($red, 30%) 0%,
+    rgba($black, 0%) 100%
+  );
 
   &-title {
-    @include fluid-typography(17, 22);
-    color: $white;
-    background-color: $black;
-    text-align: left;
-    font-weight: 700;
     display: block;
+    text-align: left;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
     width: 100%;
-    padding: 1rem 2.5rem;
+    padding: 1.25rem;
+    padding-right: 3rem;
     position: relative;
     cursor: pointer;
     border: none;
 
-    &::before {
+    &::after {
       content: '+';
-      color: $white;
+      color: $black;
       position: absolute;
-      top: 50;
-      left: 0.8em;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 100%;
+      background-color: $white;
+      top: 35%;
+      right: 0.8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       transition: all 0.3s ease;
     }
 
     &.open {
-      &::before {
+      &::after {
         transform: rotate(45deg);
       }
     }
@@ -73,8 +86,8 @@ export default {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
 
-    & > div {
-      padding: 1rem 2.5rem;
+    & > * {
+      padding: 0.5rem 1.25rem;
     }
 
     &.expand {

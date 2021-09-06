@@ -4,11 +4,12 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'DailyChatLine',
+    title: 'Up For FLing',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
@@ -31,7 +32,7 @@ export default {
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    phone: process.env.PHONE || 'tel:5098765792',
+    phone: process.env.PHONE || 'tel:5098765798',
   },
 
   globals: {
@@ -60,23 +61,11 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    ['@nuxtjs/eslint-module', { fix: true }],
     '@nuxtjs/style-resources',
+    '@aceforth/nuxt-optimized-images',
+    '@nuxt/image',
     '@modules/generator',
-    [
-      '@nuxtjs/google-fonts',
-      {
-        families: {
-          Oswald: [300],
-          'Open+Sans': [300, 700],
-        },
-        display: 'swap',
-        download: true,
-        stylePath: 'scss/_fonts.scss',
-        inject: false,
-        overwriting: true,
-      },
-    ],
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -85,8 +74,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@aceforth/nuxt-optimized-images',
     '@nuxtjs/sitemap',
+    '@nuxtjs/axios',
   ],
 
   build: {
@@ -104,6 +93,21 @@ export default {
         useShortDoctype: true,
       },
     },
+
+    babel: {
+      presets({ isClient }, preset) {
+        if (isClient) {
+          // https://babeljs.io/docs/en/babel-preset-env
+          preset[1].targets = {
+            chrome: '60',
+            safari: '10',
+            firefox: '54',
+            edge: '15',
+          }
+        }
+        return [preset]
+      },
+    },
   },
 
   generate: {
@@ -114,8 +118,6 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
-
   optimizedImages: {
     optimizeImages: false,
   },
@@ -125,7 +127,8 @@ export default {
       fileName: 'favicon.png',
     },
     manifest: {
-      theme_color: '#d33',
+      lang: 'en',
+      theme_color: '#fe4943',
     },
   },
 
@@ -144,7 +147,7 @@ export default {
     bundleRenderer: {
       shouldPreload: (file, type) => {
         if (type === 'font') {
-          const latin = new RegExp('-latin\\d{1,}.+woff2$')
+          const latin = new RegExp('-latin.+woff')
           return latin.test(file)
         }
         return ['script', 'style'].includes(type)
