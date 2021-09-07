@@ -23,7 +23,7 @@ const handler = async function (event) {
     )
 
     const response = await request.json()
-    console.log(response)
+    // console.log(response)
 
     if (
       response.status === 'subscribed' ||
@@ -42,7 +42,7 @@ const handler = async function (event) {
       }
     }
   } catch (error) {
-    console.log(error)
+    // console.log(error)
     return {
       statusCode: response.status,
       body: JSON.stringify(response.detail),

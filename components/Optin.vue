@@ -43,7 +43,7 @@ export default {
         })
 
         const response = await request.json()
-        console.log(response)
+        // console.log(response)
 
         if (response === 'success') {
           this.show = false
