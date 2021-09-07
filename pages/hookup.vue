@@ -129,6 +129,24 @@ export default {
 
     return { toggles }
   },
+
+  computed: {
+    metaTitle() {
+      return `Best Hookup Sites That Work In ${this.getCurrentYear} | Local Hookups Near Me | Up For Fling`
+    },
+    metaDescription() {
+      return `Want to find a girl for one night stand nearby? Check below for best hookup sites of ${this.getCurrentYear} with the highest hookup rates based on thousands of user feedbacks.`
+    },
+    metaImage() {
+      return process.env.baseUrl + '/static/uff-hero.jpg'
+    },
+
+    getCurrentYear() {
+      const currentYear = new Date()
+      const fullYear = currentYear.getFullYear()
+      return fullYear
+    },
+  },
 }
 </script>
 

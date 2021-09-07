@@ -15,7 +15,16 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    metaTitle() {
+      return `Contact us | Up For Fling`
+    },
+    metaDescription() {
+      return `Contact Up For Fling today`
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

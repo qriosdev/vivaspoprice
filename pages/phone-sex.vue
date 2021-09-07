@@ -116,6 +116,24 @@ export default {
 
     return { toggles }
   },
+
+  computed: {
+    metaTitle() {
+      return `Best Phone Sex Line Of ${this.getCurrentYear} | Chat Line With Free Trial | Up For Fling`
+    },
+    metaDescription() {
+      return `Try out the hottest adult chat line in North America in ${this.getCurrentYear} for free based on real user feedbacks.`
+    },
+    metaImage() {
+      return process.env.baseUrl + '/static/phone-sex-hero.jpg'
+    },
+
+    getCurrentYear() {
+      const currentYear = new Date()
+      const fullYear = currentYear.getFullYear()
+      return fullYear
+    },
+  },
 }
 </script>
 

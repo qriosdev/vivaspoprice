@@ -2,8 +2,14 @@
   <header>
     <section id="nav">
       <div class="row">
-        <nuxt-link to="/" class="logo">
-          <NuxtPicture format="webp" src="/upforfling-logo.png" />
+        <nuxt-link to="/" class="logo" @click.native="closeMenu">
+          <NuxtPicture
+            ref="img"
+            format="webp"
+            src="/upforfling-logo.png"
+            width="100"
+            height="46"
+          />
         </nuxt-link>
         <button ref="ham" @click="toggleMenu">
           <div ref="bars"></div>
@@ -33,6 +39,16 @@ export default {
 
       menu.classList.toggle('hide')
       bars.classList.toggle('open')
+    },
+
+    closeMenu() {
+      const menu = this.$refs.menu
+      const bars = this.$refs.bars
+
+      if (!menu.classList.contains('hide')) {
+        menu.classList.toggle('hide')
+        bars.classList.toggle('open')
+      }
     },
   },
 }

@@ -97,7 +97,25 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    metaTitle() {
+      return `Best Free Cam Girls Sites Of ${this.getCurrentYear} | Live Cam To Cam | Up For Fling`
+    },
+    metaDescription() {
+      return `Looking for some online fun with hot girls who like to perform for you? Check below for the best cam girls sites of ${this.getCurrentYear} based on actual user reviews on the web.`
+    },
+    metaImage() {
+      return process.env.baseUrl + '/static/cam-girls-center2-1.jpg'
+    },
+
+    getCurrentYear() {
+      const currentYear = new Date()
+      const fullYear = currentYear.getFullYear()
+      return fullYear
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

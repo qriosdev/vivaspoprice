@@ -37,7 +37,7 @@
 
     <section id="easier">
       <div class="row easier-txt">
-        <div>
+        <div class="column">
           <h2>It's Never Been Easier</h2>
           <Divider />
           <p>
@@ -224,6 +224,24 @@ export default {
       .fetch()
     return { togglesUsing, togglesMore }
   },
+
+  computed: {
+    metaTitle() {
+      return `Best Hookup, Phone Sex, Cam Girls Sites of ${this.getCurrentYear} | Up For Fling`
+    },
+    metaDescription() {
+      return `Whether you’re looking for women that want to hook up or some online fun, you can find it all on the best adult dating site of the ${this.getCurrentYear}`
+    },
+    metaImage() {
+      return process.env.baseUrl + '/static/uff-hero.jpg'
+    },
+
+    getCurrentYear() {
+      const currentYear = new Date()
+      const fullYear = currentYear.getFullYear()
+      return fullYear
+    },
+  },
 }
 </script>
 
@@ -311,7 +329,7 @@ export default {
       display: flex;
       justify-content: flex-end;
 
-      div {
+      .column {
         max-width: 60%;
       }
     }
