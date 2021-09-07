@@ -2,16 +2,22 @@
   <header>
     <section id="nav">
       <div class="row">
-        <nuxt-link to="/" class="logo" @click.native="closeMenu">
+        <nuxt-link
+          to="/"
+          class="logo"
+          aria-label="logo"
+          @click.native="closeMenu"
+        >
           <NuxtPicture
             ref="img"
             format="webp"
             src="/upforfling-logo.png"
             width="100"
             height="46"
+            alt="Up For Fling"
           />
         </nuxt-link>
-        <button ref="ham" @click="toggleMenu">
+        <button ref="ham" aria-label="button" @click="toggleMenu">
           <div ref="bars"></div>
         </button>
       </div>
