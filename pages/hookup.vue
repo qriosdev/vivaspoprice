@@ -138,7 +138,7 @@ export default {
       return `Want to find a girl for one night stand nearby? Check below for best hookup sites of ${this.getCurrentYear} with the highest hookup rates based on thousands of user feedbacks.`
     },
     metaImage() {
-      return process.env.baseUrl + '/static/uff-hero.jpg'
+      return process.env.baseUrl + '/upforhookup.jpg'
     },
 
     getCurrentYear() {

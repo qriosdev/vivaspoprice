@@ -106,7 +106,7 @@ export default {
       return `Looking for some online fun with hot girls who like to perform for you? Check below for the best cam girls sites of ${this.getCurrentYear} based on actual user reviews on the web.`
     },
     metaImage() {
-      return process.env.baseUrl + '/static/cam-girls-center2-1.jpg'
+      return process.env.baseUrl + '/cam-girls-center2-1.jpg'
     },
 
     getCurrentYear() {

@@ -233,7 +233,7 @@ export default {
       return `Whether you’re looking for women that want to hook up or some online fun, you can find it all on the best adult dating site of the ${this.getCurrentYear}`
     },
     metaImage() {
-      return process.env.baseUrl + '/static/uff-hero.jpg'
+      return process.env.baseUrl + '/uff-hero.jpg'
     },
 
     getCurrentYear() {

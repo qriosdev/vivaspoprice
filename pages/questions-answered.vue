@@ -31,7 +31,7 @@ export default {
       metaTitle: 'Questions Answered | Up For Fling',
       metaDescription:
         "Looking for a quick fun but don't know where to start? Find answers on your questions right here!",
-      metaImage: process.env.baseUrl + require('~/static/uff-hero.jpg'),
+      metaImage: process.env.baseUrl + '/uff-hero.jpg',
     }
   },
 }

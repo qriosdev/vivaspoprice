@@ -125,7 +125,7 @@ export default {
       return `Try out the hottest adult chat line in North America in ${this.getCurrentYear} for free based on real user feedbacks.`
     },
     metaImage() {
-      return process.env.baseUrl + '/static/phone-sex-hero.jpg'
+      return process.env.baseUrl + '/phone-sex-hero.jpg'
     },
 
     getCurrentYear() {
