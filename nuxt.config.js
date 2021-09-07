@@ -63,7 +63,6 @@ export default {
     // https://go.nuxtjs.dev/eslint
     ['@nuxtjs/eslint-module', { fix: true }],
     '@nuxtjs/style-resources',
-    '@aceforth/nuxt-optimized-images',
     '@nuxt/image',
     '@modules/generator',
   ],
@@ -75,7 +74,6 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/sitemap',
-    '@nuxtjs/axios',
   ],
 
   build: {
@@ -140,7 +138,7 @@ export default {
       priority: 1,
       lastmod: new Date(),
     },
-    exclude: ['/secret-offer/'],
+    exclude: ['/find-hookup/', '/find-cam-girls/', '/thank-you/'],
   },
 
   render: {
