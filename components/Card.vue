@@ -1,9 +1,5 @@
 <template>
-  <nuxt-link
-    :to="url"
-    class="card"
-    :style="`--background: url('/${background}')`"
-  >
+  <nuxt-link :to="url" class="card" :style="styling">
     <div class="card-stars" :style="`--rating: ${rating}`"></div>
     <p class="card-title h3">{{ title }}</p>
     <p class="card-subtitle">{{ subtitle }}</p>
@@ -35,18 +31,29 @@ export default {
       default: '',
     },
   },
+
+  computed: {
+    bgImg() {
+      return this.background
+    },
+
+    styling() {
+      return `background-image: url('${this.background}'), radial-gradient(circle at bottom right, rgba(254, 73, 67, 0.8) 0%, rgba(26, 24, 68, 0.8) 100%);`
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .card {
   background-blend-mode: overlay;
-  background-image: var(--background),
-    radial-gradient(
-      circle at bottom right,
-      rgba($red, 80%) 0%,
-      rgba($blue, 80%) 100%
-    );
+  // background-image: var(--background),
+  //   radial-gradient(
+  //     circle at bottom right,
+  //     rgba($red, 80%) 0%,
+  //     rgba($blue, 80%) 100%
+  //   );
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,12 +74,12 @@ export default {
 
   &:hover {
     transform: translateY(-10px);
-    background-image: var(--background),
-      radial-gradient(
-        circle at bottom right,
-        rgba($red, 90%) 0%,
-        rgba($blue, 80%) 100%
-      );
+    // background-image: var(--background),
+    //   radial-gradient(
+    //     circle at bottom right,
+    //     rgba($red, 90%) 0%,
+    //     rgba($blue, 80%) 100%
+    //   );
     box-shadow: 0px 40px 120px -10px rgba($red, 30%);
     transition: all 0.3s ease;
   }

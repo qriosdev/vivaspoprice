@@ -148,7 +148,7 @@ export default {
           const latin = new RegExp('-latin.+woff')
           return latin.test(file)
         }
-        return ['script', 'style'].includes(type)
+        return ['script', 'style', 'font'].includes(type)
       },
     },
   },
