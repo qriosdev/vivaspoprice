@@ -1,7 +1,7 @@
 @import '~assets/scss/variables.scss';
 
 // FLUID FONTS
-@mixin fluid-typography($minFont, $maxFont) {
+@mixin font-minmax($minFont, $maxFont) {
   $maxLessOne: $desktop - 1;
   $avg: ($maxFont + $minFont) / 2;
   font-size: #{$minFont}px;
@@ -36,16 +36,16 @@
 
 // BUTTON
 @mixin btn($background, $color, $border, $shadow) {
-  @include fluid-typography(14, 15);
+  @include font-minmax(14, 16);
 
   background-color: $background;
   color: $color;
   text-align: center;
   text-decoration: none;
-  padding: 1.5em 3em;
+  padding: 1em 2em;
   margin-bottom: 1.2rem;
   border-radius: 3px;
-  font-family: $font-rw;
+  font-family: $font-open-sans;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -55,4 +55,11 @@
   @if $shadow {
     box-shadow: 0px 2px 30px 0px rgba($red, 50%);
   }
+}
+
+// RESPONSIVE GRID
+@mixin grid($min, $max, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, $max));
+  grid-gap: $gap;
 }

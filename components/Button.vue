@@ -59,19 +59,19 @@ export default {
 
 <style lang="scss" scoped>
 .btn-primary {
-  @include btn($red, $white, $red, $shadow: true);
+  @include btn($purple, $white, $purple, false);
 
-  &:hover {
-    box-shadow: 0px 2px 30px 0px rgba($red, 70%);
+  // &:hover {
+  //   box-shadow: 0px 2px 30px 0px rgba($purple, 70%);
 
-    .btn-icon ::v-deep svg {
-      path,
-      circle {
-        fill: $red;
-        stroke: $red;
-      }
-    }
-  }
+  //   .btn-icon ::v-deep svg {
+  //     path,
+  //     circle {
+  //       fill: $purple;
+  //       stroke: $purple;
+  //     }
+  //   }
+  // }
 }
 
 .btn-icon ::v-deep svg {

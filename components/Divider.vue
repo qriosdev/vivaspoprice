@@ -15,9 +15,9 @@ export default {
 
 <style lang="scss" scoped>
 .divider {
-  height: 4px;
-  background-color: $red;
-  max-width: 100px;
+  height: 1px;
+  background-color: $green;
+  max-width: 70px;
   margin: 2rem 0;
 }
 

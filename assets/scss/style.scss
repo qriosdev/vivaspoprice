@@ -1,5 +1,102 @@
-@import "~assets/scss/fonts.scss";
-@import "~assets/scss/mixins.scss";
-@import "~assets/scss/transitions.scss";
-@import "~assets/scss/utilities.scss";
-@import "~assets/scss/base.scss";
+@import '~assets/scss/fonts.scss';
+@import '~assets/scss/variables.scss';
+@import '~assets/scss/mixins.scss';
+@import '~assets/scss/transitions.scss';
+@import '~assets/scss/utilities.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: auto;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-open-sans;
+  font-size: 16px;
+  line-height: 2;
+}
+
+button {
+  font-family: $font-open-sans;
+}
+
+section {
+  padding: calc(2rem + 5vw) 0;
+}
+
+.row {
+  max-width: 1080px;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.nuxt-content {
+  a {
+    color: $purple;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-quicksand;
+  color: $purple;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+h1 {
+  @include font-minmax(46, 80);
+}
+
+h2 {
+  @include font-minmax(32, 40);
+}
+
+h3 {
+  @include font-minmax(28, 30);
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+p {
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+ul,
+ol {
+  margin-left: 0;
+  padding-left: 3rem;
+  margin-bottom: 1em;
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
+}
+
+svg {
+  max-width: 500px;
+}
+
+pre {
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  text-align: left;
+}

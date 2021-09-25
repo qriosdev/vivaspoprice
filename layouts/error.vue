@@ -15,10 +15,6 @@
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background-image: url('/girl-red-room.jpg');
-  background-size: cover;
-  background-color: rgba($blue, 80%);
-  background-blend-mode: overlay;
 
   h1 {
     font-size: 20vw;
@@ -28,7 +24,7 @@
 
   p {
     font-size: 1.2rem;
-    margin-bottom: 1.6em;
+    margin-bottom: 3rem;
   }
 }
 </style>

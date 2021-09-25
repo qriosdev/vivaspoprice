@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Up For FLing',
+    title: "Viva's Poprice",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -32,7 +32,7 @@ export default {
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
-    phone: process.env.PHONE || 'tel:5098765798',
+    // phone: process.env.PHONE || 'tel:5098765798'
   },
 
   globals: {
@@ -43,7 +43,7 @@ export default {
   css: ['~assets/scss/style.scss'],
 
   styleResources: {
-    scss: ['./assets/scss/*.scss'],
+    scss: ['./assets/scss/_variables.scss', './assets/scss/_mixins.scss'],
     hoistUseStatements: true,
   },
 
@@ -65,6 +65,7 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxt/image',
     '@modules/generator',
+    '@nuxtjs/composition-api/module',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -110,15 +111,11 @@ export default {
 
   generate: {
     fallback: true,
+    interval: 2000,
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
-
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  optimizedImages: {
-    optimizeImages: false,
-  },
 
   pwa: {
     icon: {
@@ -138,7 +135,7 @@ export default {
       priority: 1,
       lastmod: new Date(),
     },
-    exclude: ['/find-hookup/', '/find-cam-girls/', '/thank-you/'],
+    exclude: [],
   },
 
   render: {
