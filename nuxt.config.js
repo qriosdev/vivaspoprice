@@ -31,7 +31,7 @@ export default {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    baseUrl: process.env.BASE_URL || 'http://localhost:4000',
     // phone: process.env.PHONE || 'tel:5098765798'
   },
 

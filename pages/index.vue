@@ -93,30 +93,26 @@
 </template>
 
 <script>
-import { useContext, useAsync } from '@nuxtjs/composition-api'
+import { useContext, useAsync, defineComponent } from '@nuxtjs/composition-api'
+import { seoMetas } from '@/composables/seoMetas'
 
-export default {
+export default defineComponent({
   setup() {
     const { $content } = useContext()
     const products = useAsync(() => {
       return $content('products').sortBy('createdAt').fetch()
     })
 
-    return { products }
-  },
+    const title = `Viva's Poprice | Game Changer For Snack Foods`
+    const description = `Viva's Poprice is a unique snack concept. The owner, Viva Wu, has spent three years to perfect the concept before he was ready to share poprice with the`
+    const image = '/img/half-half.jpg'
 
-  computed: {
-    metaTitle() {
-      return `Viva's Poprice | Game Changer For Snack Foods`
-    },
-    metaDescription() {
-      return `Viva's Poprice is a unique snack concept. The owner, Viva Wu, has spent three years to perfect the concept before he was ready to share poprice with the`
-    },
-    metaImage() {
-      return process.env.baseUrl + '/img/half-half.jpg'
-    },
+    const setMetas = seoMetas(title, description, image)
+
+    return { products, setMetas }
   },
-}
+  head: {},
+})
 </script>
 
 <style lang="scss" scoped>
