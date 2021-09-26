@@ -106,11 +106,11 @@ export default defineComponent({
     const title = `Viva's Poprice | Game Changer For Snack Foods`
     const description = `Viva's Poprice is a unique snack concept. The owner, Viva Wu, has spent three years to perfect the concept before he was ready to share poprice with the`
     const image = '/img/half-half.jpg'
+    seoMetas(title, description, image)
 
-    const setMetas = seoMetas(title, description, image)
-
-    return { products, setMetas }
+    return { products }
   },
+
   head: {},
 })
 </script>

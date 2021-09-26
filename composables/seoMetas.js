@@ -55,9 +55,4 @@ export const seoMetas = (seoTitle, seoDesc, seoImg) => {
       content: seoTitle,
     },
   ]
-
-  return {
-    title,
-    meta,
-  }
 }
